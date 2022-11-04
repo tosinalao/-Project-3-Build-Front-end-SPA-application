@@ -1,0 +1,207 @@
+<!-- index.html  main page of our SPA-->
+<html>
+  <head>
+    <!-- include bootstap dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="spa_app.css">
+
+    <!-- Include handlebars library -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Script for our application  -->
+    <!-- <link rel="stylesheet" href="spa_app.css"> -->
+    <script src="quiz.js"> </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Quiz  App</a>
+      </div>
+    </nav>
+
+    <div id="widget_view" class="mx-auto mt-50">
+
+
+
+    </div>
+  </body>
+
+
+<!--
+  Specify all possible view templates
+  These views can go on a separate file (i.e., views.html) and linked to the current html
+  files using the tag:
+    <link href="views.html" rel="import">
+ -->
+ <script id="input_view" type="text/x-handlebars-template">
+   <div class="container">
+     <div class="row">
+         <div class="col">
+
+          <div class="mb-3">
+            <p class="fw-bold">Enter Name To Begin</p>
+            <input type="text" class="form-control" id="studentName" onkeyup="checkName(this)"  placeholder="Enter FullName">
+            <button type="submit" id="nameBtn" class="btn btn-primary mt-3"  data-action="submit"   disabled>Submit</button>
+          </div>
+
+         </div>
+       </div>
+     </div>
+ </script>
+
+
+
+
+  <script id="menu_view" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <p class="fw-bold">Select Quiz</p>
+               <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="setSelectedQuiz(this)">
+                <option selected value="0">Select</option>
+                {{#each quizzes}}
+                <option value="{{id}}">{{name}}</option>
+                {{/each}}
+
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+
+  <script id="question_view_true_false" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <p  class="question_text"> {{question.text}}</p>
+              {{#each question.answers}}
+                  <div>
+                    <button class="btn btn-light" onclick="nextQuestion(this)" data-answer-id="{{id}}">{{text}}</button>
+                  </div>
+              {{/each}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+  <script id="question_view_multiple_choice_single" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <p class="questionNo">{{questionNo}}</p>
+              <p  class="question_text"> {{question.text}}</p>
+              {{#each question.answers}}
+                <div>
+                    <button class="btn btn-light" onclick="nextQuestion(this)"  data-answer-id="{{id}}">{{text}}</button>
+                 </div>
+              {{/each}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+
+  <script id="question_view_multiple_choice_multiple" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <p class="question_text"> {{question.text}}</p>
+              {{#each question.answers}}
+                  <div>
+                     <input type="checkbox" class="btn btn-primary" name ="multiple"  data-answer-id="{{id}}" /> {{text}}
+                  </div>
+
+              {{/each}}
+
+              <button class="btn btn-primary" onclick="handleMultipleOption()"  data-answer-id="{{id}}">{{text}}</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+
+
+  <script id="question_view_image_choice" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <span style="text-align:center" class="question_text"> {{question.text}}</span>
+              {{#each question.answers}}
+                <div>
+                  <img  src="{{text}}" class="btn img-answer" onclick="nextQuestion(this)"  data-answer-id="{{id}}" />
+
+                  <div>
+              {{/each}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+  <script id="question_view_text_input" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <p class="question_text"> {{question.text}}</p>
+              <input type="text" class="form-control"   placeholder="Enter answer">
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+  <script id="question_view_blank_input" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <p class="question_text"> {{question.text}}</p>
+              <input type="text"  class="form-control"   placeholder="Enter answer"><br><br>
+              <button class="btn btn-danger float-right" onclick="checkInputAnswer()"  data-action="blank_input">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+  <script id="end_view" type="text/x-handlebars-template">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <div>
+                <div>
+                   {{message}}
+                </div>
+
+                <span> Thank you for taking the quiz</span>
+                <button class="btn btn-danger float-right" data-action="start_again">Start Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </script>
+
+    <div id = "explanation" class="explanation hide">
+      <h1> Explanation </h1>
+    </div>
+</html>
