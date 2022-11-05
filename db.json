@@ -33,7 +33,7 @@
    ],
    "questions-and-answers":[
       {
-         "id":"Question 1",
+         "id": 1,
          "text":"What is a java class?",
          "quizId":1,
          "questionTypeId":4,
@@ -58,7 +58,7 @@
          ]
       },
       {
-         "id": "Question 2",
+         "id": 2,
          "text":"An object is an instance of a class",
          "quizId":1,
          "questionTypeId":1,
@@ -75,7 +75,7 @@
          ]
       },
       {
-         "id":"Question 3",
+         "id": 3,
          "text":"What is OOP?",
          "quizId":1,
          "questionTypeId":3,
