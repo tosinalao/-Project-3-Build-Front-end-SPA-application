@@ -56,7 +56,7 @@
                "text":"A cooking Pot"
             }
          ],
-         "explanation" : "A class is a blueprint for creating object <br>  eg Class:  class Car {} <br>  Object: Car car = new Car();"
+         "explanation" : "Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake."
       },
       {
          "id": 2,
@@ -74,7 +74,7 @@
                "text":"false"
             }
          ],
-         "explanation" : "An object is an instance of a class because"
+         "explanation" : "A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state."
       },
       {
          "id": 3,
@@ -88,11 +88,11 @@
                "text":"Object Oriented Programming"
             }
          ], 
-         "explanation" : "The answer is object oriented programming because"
+         "explanation" : "Object-oriented programming is about creating objects that contain both data and methods."
       },
       {
          "id":4,
-         "text":"The ___ method is the entry point",
+         "text":"The ______ method is the entry point of a program",
          "quizId":1,
          "questionTypeId":5,
          "correctAnswerId":1,
@@ -102,11 +102,11 @@
                "text": "main"
             }
          ],
-         "explanation" : "The answer is main method because"
+         "explanation" : "The Java main method is usually the first method you learn about when you start programming in Java because its the entry point for executing a Java program. The main method can contain code to execute or call other methods, and it can be placed in any class that’s part of a program"
       },
       {
          "id":5,
-         "text":"What are features of oop ? select all that applies",
+         "text":"Which of these are features of OOP? Select all that applies.",
          "quizId":1,
          "questionTypeId":2,
          "correctAnswerIds": [ 1, 2, 3, 4],
@@ -128,7 +128,7 @@
                "text":"Inheritance"
             }
          ],
-          "explanation" : "The answer is all of the above because"
+          "explanation" : "The answer is all of the above because object-oriented programming has four basic concepts: encapsulation, abstraction, inheritance and polymorphism. While these concepts may seem complex, understanding the general framework of how they work will help you understand the basics of an OOP computer program."
       },
        {
          "id":6,
