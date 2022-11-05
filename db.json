@@ -104,26 +104,26 @@
       },
       {
          "id":5,
-         "text":"Which HTML tag creates a hyperlink to anything a URL can address?",
+         "text":"What are features of oop ? select all that applies",
          "quizId":1,
-         "questionTypeId":1,
-         "correctAnswerId":4,
+         "questionTypeId":2,
+         "correctAnswerIds": [ 1, 2, 3, 4],
          "answers":[
             {
                "id":1,
-               "text":"<h1>"
+               "text":"Encapsulation"
             },
             {
                "id":2,
-               "text":"<li>"
+               "text":"Abstraction"
             },
             {
                "id":3,
-               "text":"<div>"
+               "text":"Polymorphism"
             },
             {
                "id":4,
-               "text":"<a>"
+               "text":"Inheritance"
             }
          ]
       },
