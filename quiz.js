@@ -3,6 +3,7 @@ const QUIZZESURL ="https://my-json-server.typicode.com/tosinalao/Project-3-Build
 const QUESTIONURL =  "https://my-json-server.typicode.com/tosinalao/Project-3-Build-Front-end-SPA-application/questions-and-answers"
 
 
+
 // appState, keep information about the State of the application.
 const appState = {
     current_view : "#input_view",
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       handle_widget_event(e)
   }
 });
+
 
 
 function handle_widget_event(e) {
@@ -112,6 +114,8 @@ const render_widget = (model,view) => {
 
 
 
+//function helper
+
 function checkName(ele){
 
   if(ele.value.length >= 4){
@@ -163,6 +167,8 @@ function gotoNextQuestion(){
 
 function nextQuestion(ele){
 
+   //check answer
+
    var answerId =parseInt( ele.getAttribute('data-answer-id'))
    if(  answerId == appState.question.correctAnswerId){
         appState.score ++;
@@ -173,7 +179,7 @@ function nextQuestion(ele){
      //show hint
      var answer = appState.question.answers.find(x => x.id ==  answerId);
      appState.userAnswers = [{id: answerId , text: answer.text, correct:false }];
-     showExplainationView();
+     showexplanationView();
    }
 
 
@@ -187,8 +193,8 @@ function showEncouragingView(){
 }
 
 
-function showExplainationView(){
-  appState.current_view = "#explaination_view";
+function showexplanationView(){
+  appState.current_view = "#explanation_view";
   update_view({question: appState.question, userAnswers: appState.userAnswers});
 }
 
@@ -222,6 +228,8 @@ function checkInputAnswer(){
     appState.userAnswers = userAnswers;
 
 
+
+
    if(valid){
         appState.score ++;
         showEncouragingView();
@@ -230,7 +238,7 @@ function checkInputAnswer(){
    }else{
      var answer = appState.question.answers.find(x => x.id ==  answerId);
      appState.userAnswers = [{id: answerId , text: answer.text, correct:false }];
-     showExplainationView();
+     showexplanationView();
 
 
    }
@@ -269,6 +277,8 @@ function handleMultipleOption(){
 
        }
 
+
+
      }
 
 
@@ -283,7 +293,7 @@ function handleMultipleOption(){
        setTimeout( gotoNextQuestion, 1000);
 
   }else{
-    showExplainationView();
+    showexplanationView();
 
   }
 
