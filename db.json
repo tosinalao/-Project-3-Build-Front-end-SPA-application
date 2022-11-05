@@ -81,6 +81,7 @@
          "text":"What is OOP?",
          "quizId":1,
          "questionTypeId":3,
+         "correctAnswerId":1,
          "answers":[
             {
                "id":1,
@@ -94,6 +95,7 @@
          "text":"The ___ method is the entry point",
          "quizId":1,
          "questionTypeId":5,
+         "correctAnswerId":1,
          "answers":[
             {
                "id":1,
