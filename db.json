@@ -24,11 +24,11 @@
    "quizzes":[
       {
          "id":1,
-         "name":"Java"
+         "name":"Java Quiz"
       },
       {
          "id":2,
-         "name":"HTML"
+         "name":"HTML Quiz"
       }
    ],
    "questions-and-answers":[
@@ -113,7 +113,7 @@
       },
       {
          "id":5,
-         "text":"Which HTML tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address",
+         "text":"Which HTML tag creates a hyperlink to anything a URL can address?",
          "quizId":2,
          "questionTypeId":1,
          "correctAnswerId":4,
@@ -138,32 +138,32 @@
       },
        {
          "id":6,
-         "text":"What is a java class",
+         "text":"What does system.out.print do?",
          "quizId":1,
          "questionTypeId":4,
-         "correctAnswerId":1,
+         "correctAnswerId":2,
          "answers":[
             {
                "id":1,
-               "text":"It is a blue print for creating objects"
+               "text":"iterate through a list" 
             },
             {
                "id":2,
-               "text":"An instance of a Car"
+               "text":"Print a statement"
             },
             {
                "id":3,
-               "text":"A class for studying"
+               "text":"call a function"
             },
             {
                "id":4,
-               "text":"A cooking Pot"
+               "text":"clear the console"
             }
          ]
       },
       {
          "id":7,
-         "text":"An object is an insatnce of a class",
+         "text":"Java is a coding language",
          "quizId":1,
          "questionTypeId":1,
          "correctAnswerId":1,
@@ -180,13 +180,13 @@
       },
       {
          "id":8,
-         "text":"What is OOP",
+         "text":"Which method has no return type?",
          "quizId":1,
          "questionTypeId":3,
          "answers":[
             {
                "id":1,
-               "text":"Object Oriented Programing"
+               "text":"void method"
             }
          ]
       },
@@ -217,9 +217,9 @@
       },
       {
          "id":10,
-         "text":"Which HTML tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address",
+         "text":"Which tag is used for a list ",
          "quizId":2,
-         "questionTypeId":1,
+         "questionTypeId":3,
          "correctAnswerId":4,
          "answers":[
             {
@@ -228,11 +228,11 @@
             },
             {
                "id":2,
-               "text":"<li>"
+               "text":"<div>"
             },
             {
                "id":3,
-               "text":"<div>"
+               "text":"<li>"
             },
             {
                "id":4,
@@ -242,35 +242,35 @@
       },
        {
          "id":11,
-         "text":"What is a java class",
+         "text":"What is a function?",
          "quizId":1,
          "questionTypeId":4,
-         "correctAnswerId":1,
+         "correctAnswerId":4,
          "answers":[
             {
                "id":1,
-               "text":"It is a blue print for creating objects"
+               "text":"A class"
             },
             {
                "id":2,
-               "text":"An instance of a Car"
+               "text":"A constructor"
             },
             {
                "id":3,
-               "text":"A class for studying"
+               "text":"A print statement"
             },
             {
                "id":4,
-               "text":"A cooking Pot"
+               "text":"A method that has a return type"
             }
          ]
       },
       {
          "id":12,
-         "text":"An object is an insatnce of a class",
+         "text":"Int is used for characters",
          "quizId":1,
          "questionTypeId":1,
-         "correctAnswerId":1,
+         "correctAnswerId":2,
          "answers":[
             {
                "id":1,
@@ -284,13 +284,13 @@
       },
       {
          "id":13,
-         "text":"What is OOP",
+         "text":"Which is used for numbers in Java? Double or Char",
          "quizId":1,
          "questionTypeId":3,
          "answers":[
             {
                "id":1,
-               "text":"Object Oriented Programing"
+               "text":"Double"
             }
          ]
       },
@@ -321,10 +321,10 @@
       },
       {
          "id":15,
-         "text":"Which HTML tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address",
+         "text":"Which HTML tag is used to define style information? ",
          "quizId":2,
          "questionTypeId":1,
-         "correctAnswerId":4,
+         "correctAnswerId":3,
          "answers":[
             {
                "id":1,
@@ -336,7 +336,7 @@
             },
             {
                "id":3,
-               "text":"<div>"
+               "text":"<style>"
             },
             {
                "id":4,
