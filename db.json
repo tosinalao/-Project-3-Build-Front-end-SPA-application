@@ -58,7 +58,7 @@
          ]
       },
       {
-         "id":2,
+         "id": "Question 2",
          "text":"An object is an instance of a class",
          "quizId":1,
          "questionTypeId":1,
@@ -75,14 +75,14 @@
          ]
       },
       {
-         "id":3,
+         "id":"Question 3",
          "text":"What is OOP?",
          "quizId":1,
          "questionTypeId":3,
          "answers":[
             {
                "id":1,
-               "text":"Object Oriented Programing"
+               "text":"Object Oriented Programming"
             }
          ]
       },
