@@ -55,7 +55,8 @@
                "id":4,
                "text":"A cooking Pot"
             }
-         ]
+         ],
+         "explanation" : "A class is a blueprint for creating object <br>  eg Class:  class Car {} <br>  Object: Car car = new Car();"
       },
       {
          "id": 2,
@@ -72,7 +73,8 @@
                "id":2,
                "text":"false"
             }
-         ]
+         ],
+         "explanation" : "An object is an instance of a class because"
       },
       {
          "id": 3,
@@ -84,7 +86,8 @@
                "id":1,
                "text":"Object Oriented Programming"
             }
-         ]
+         ], 
+         "explanation" : "The answer is object oriented programming because"
       },
       {
          "id":4,
