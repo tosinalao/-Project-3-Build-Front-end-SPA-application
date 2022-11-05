@@ -397,56 +397,6 @@
                "text":"Object Oriented Programing"
             }
          ]
-      },
-      {
-         "id":19,
-         "text":"Which is Java logo",
-         "quizId":1,
-         "questionTypeId":5,
-         "correctAnswerId":3,
-         "answers":[
-            {
-               "id":1,
-               "text":"https://ibb.co/P5jyRV0"
-            },
-            {
-               "id":2,
-               "text":"https://ibb.co/dgH4hFm"
-            },
-            {
-               "id":3,
-               "text":"https://ibb.co/WkYvnyB"
-            },
-            {
-               "id":4,
-               "text":"https://ibb.co/dgH4hFm"
-            }
-         ]
-      },
-      {
-         "id":20,
-         "text":"Which HTML tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address",
-         "quizId":2,
-         "questionTypeId":1,
-         "correctAnswerId":4,
-         "answers":[
-            {
-               "id":1,
-               "text":"<h1>"
-            },
-            {
-               "id":2,
-               "text":"<li>"
-            },
-            {
-               "id":3,
-               "text":"<div>"
-            },
-            {
-               "id":4,
-               "text":"<a>"
-            }
-         ]
       }
    ]
 }
