@@ -34,7 +34,7 @@
    "questions-and-answers":[
       {
          "id":1,
-         "text":"What is a java class",
+         "text":"What is a java class?",
          "quizId":1,
          "questionTypeId":4,
          "correctAnswerId":1,
@@ -59,7 +59,7 @@
       },
       {
          "id":2,
-         "text":"An object is an insatnce of a class",
+         "text":"An object is an instance of a class",
          "quizId":1,
          "questionTypeId":1,
          "correctAnswerId":1,
@@ -76,7 +76,7 @@
       },
       {
          "id":3,
-         "text":"What is OOP",
+         "text":"What is OOP?",
          "quizId":1,
          "questionTypeId":3,
          "answers":[
@@ -88,7 +88,7 @@
       },
       {
          "id":4,
-         "text":"Which is Java logo",
+         "text":"Which is the Java logo?",
          "quizId":1,
          "questionTypeId":5,
          "correctAnswerId":3,
@@ -217,7 +217,7 @@
       },
       {
          "id":10,
-         "text":"Which tag is used for a list ",
+         "text":"Which tag is used for a list?",
          "quizId":2,
          "questionTypeId":3,
          "correctAnswerId":4,
@@ -296,7 +296,7 @@
       },
       {
          "id":14,
-         "text":"Which is Java logo",
+         "text":"Which is Java logo?",
          "quizId":1,
          "questionTypeId":5,
          "correctAnswerId":3,
@@ -321,7 +321,7 @@
       },
       {
          "id":15,
-         "text":"Which HTML tag is used to define style information? ",
+         "text":"Which HTML tag is used to define style information?",
          "quizId":2,
          "questionTypeId":1,
          "correctAnswerId":3,
