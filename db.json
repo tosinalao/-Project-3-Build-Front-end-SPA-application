@@ -178,6 +178,7 @@
          "text":"Which method has no return type?",
          "quizId":1,
          "questionTypeId":3,
+         "correctAnswerId":1,
          "answers":[
             {
                "id":1,
