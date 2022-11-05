@@ -343,48 +343,6 @@
                "text":"<a>"
             }
          ]
-      },
-       {
-         "id":16,
-         "text":"What is a java class",
-         "quizId":1,
-         "questionTypeId":4,
-         "correctAnswerId":1,
-         "answers":[
-            {
-               "id":1,
-               "text":"It is a blue print for creating objects"
-            },
-            {
-               "id":2,
-               "text":"An instance of a Car"
-            },
-            {
-               "id":3,
-               "text":"A class for studying"
-            },
-            {
-               "id":4,
-               "text":"A cooking Pot"
-            }
-         ]
-      },
-      {
-         "id":17,
-         "text":"An object is an insatnce of a class",
-         "quizId":1,
-         "questionTypeId":1,
-         "correctAnswerId":1,
-         "answers":[
-            {
-               "id":1,
-               "text":"true"
-            },
-            {
-               "id":2,
-               "text":"false"
-            }
-         ]
       }
    ]
 }
