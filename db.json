@@ -132,7 +132,7 @@
          "id":6,
          "text":"What does system.out.print do?",
          "quizId":1,
-         "questionTypeId":4,
+         "questionTypeId":1,
          "correctAnswerId":2,
          "answers":[
             {
