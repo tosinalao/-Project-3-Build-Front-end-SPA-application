@@ -135,6 +135,110 @@
                "text":"<a>"
             }
          ]
+      },
+       {
+         "id":6,
+         "text":"What is a java class",
+         "quizId":1,
+         "questionTypeId":4,
+         "correctAnswerId":1,
+         "answers":[
+            {
+               "id":1,
+               "text":"It is a blue print for creating objects"
+            },
+            {
+               "id":2,
+               "text":"An instance of a Car"
+            },
+            {
+               "id":3,
+               "text":"A class for studying"
+            },
+            {
+               "id":4,
+               "text":"A cooking Pot"
+            }
+         ]
+      },
+      {
+         "id":7,
+         "text":"An object is an insatnce of a class",
+         "quizId":1,
+         "questionTypeId":1,
+         "correctAnswerId":1,
+         "answers":[
+            {
+               "id":1,
+               "text":"true"
+            },
+            {
+               "id":2,
+               "text":"false"
+            }
+         ]
+      },
+      {
+         "id":8,
+         "text":"What is OOP",
+         "quizId":1,
+         "questionTypeId":3,
+         "answers":[
+            {
+               "id":1,
+               "text":"Object Oriented Programing"
+            }
+         ]
+      },
+      {
+         "id":9,
+         "text":"Which is Java logo",
+         "quizId":1,
+         "questionTypeId":5,
+         "correctAnswerId":3,
+         "answers":[
+            {
+               "id":1,
+               "text":"https://ibb.co/P5jyRV0"
+            },
+            {
+               "id":2,
+               "text":"https://ibb.co/dgH4hFm"
+            },
+            {
+               "id":3,
+               "text":"https://ibb.co/WkYvnyB"
+            },
+            {
+               "id":4,
+               "text":"https://ibb.co/dgH4hFm"
+            }
+         ]
+      },
+      {
+         "id":10,
+         "text":"Which HTML tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address",
+         "quizId":2,
+         "questionTypeId":1,
+         "correctAnswerId":4,
+         "answers":[
+            {
+               "id":1,
+               "text":"<h1>"
+            },
+            {
+               "id":2,
+               "text":"<li>"
+            },
+            {
+               "id":3,
+               "text":"<div>"
+            },
+            {
+               "id":4,
+               "text":"<a>"
+            }
+         ]
       }
    ]
 }
