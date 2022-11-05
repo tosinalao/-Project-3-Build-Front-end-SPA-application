@@ -91,28 +91,16 @@
       },
       {
          "id":4,
-         "text":"Which is the Java logo?",
+         "text":"The ___ method is the entry point",
          "quizId":1,
          "questionTypeId":5,
-         "correctAnswerId":3,
          "answers":[
             {
                "id":1,
-               "text":"https://ibb.co/P5jyRV0"
-            },
-            {
-               "id":2,
-               "text":"https://ibb.co/dgH4hFm"
-            },
-            {
-               "id":3,
-               "text":"https://ibb.co/WkYvnyB"
-            },
-            {
-               "id":4,
-               "text":"https://ibb.co/dgH4hFm"
+               "text": "main"
             }
-         ]
+         ],
+         "explanation" : "The answer is main method because"
       },
       {
          "id":5,
