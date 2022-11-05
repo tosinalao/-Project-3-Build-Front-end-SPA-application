@@ -125,7 +125,8 @@
                "id":4,
                "text":"Inheritance"
             }
-         ]
+         ],
+          "explanation" : "The answer is all of the above because"
       },
        {
          "id":6,
@@ -150,7 +151,8 @@
                "id":4,
                "text":"clear the console"
             }
-         ]
+         ],
+         "explanation" : "The answer is print a statement because"
       },
       {
          "id":7,
