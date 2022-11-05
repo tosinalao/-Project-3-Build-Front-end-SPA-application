@@ -105,7 +105,7 @@
       {
          "id":5,
          "text":"Which HTML tag creates a hyperlink to anything a URL can address?",
-         "quizId":2,
+         "quizId":1,
          "questionTypeId":1,
          "correctAnswerId":4,
          "answers":[
@@ -209,7 +209,7 @@
       {
          "id":10,
          "text":"Which tag is used for a list?",
-         "quizId":2,
+         "quizId":1,
          "questionTypeId":3,
          "correctAnswerId":4,
          "answers":[
@@ -313,7 +313,7 @@
       {
          "id":15,
          "text":"Which HTML tag is used to define style information?",
-         "quizId":2,
+         "quizId":1,
          "questionTypeId":1,
          "correctAnswerId":3,
          "answers":[
