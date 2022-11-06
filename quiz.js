@@ -76,10 +76,10 @@ function setQuestionView() {
 
     var result =  appState.score / appState.questionNo  * 100;
 
-    if(result > 80)
-       appState.message  =`Congratulation ${appState.student_name} You Pass the Quiz`
+    if(result >= 80)
+       appState.message  =`Congratulations ${appState.student_name} You Passed the Quiz with a ${result} `
     else
-       appState.message  =`Sorry ${appState.student_name} You Fail the Quiz`
+       appState.message  =`Sorry ${appState.student_name} You Failed the Quiz with a ${result} `
     return
   }
 
