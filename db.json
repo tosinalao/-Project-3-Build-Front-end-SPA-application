@@ -313,6 +313,93 @@
             }
          ],
          "explanation" : "Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.Single-line comments start with two forward slashes (//)."
+      },
+      {
+         "id":16,
+         "text":"Which method has no return type?",
+         "quizId":1,
+         "questionTypeId":3,
+         "correctAnswerId":1,
+         "answers":[
+            {
+               "id":1,
+               "text":"void"
+            }
+         ],
+         "explanation" : "Any method declared void doesn't return a value."
+      },
+      {
+         "id":17,
+         "text":"______ is the data type used for integers.",
+         "quizId":1,
+         "questionTypeId":5,
+         "correctAnswerId":1,
+         "answers":[
+            {
+               "id":1,
+               "text":"int"
+            }
+         ],
+         "explanation" : "Integer types store whole numbers, positive or negative (such as 123 or -456), without decimals."
+
+      },
+      {
+         "id":18,
+         "text":"What type of loop is used when you know how many times you want to loop through a block of code?",
+         "quizId":1,
+         "questionTypeId":3,
+         "correctAnswerId":1,
+         "answers":[
+            {
+               "id":1,
+               "text":"for loop"
+            }
+         ],
+         "explanation" : "When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop"
+      },
+       {
+         "id":19,
+         "text":"What is a function?",
+         "quizId":1,
+         "questionTypeId":1,
+         "correctAnswerId":4,
+         "answers":[
+            {
+               "id":1,
+               "text":"A class"
+            },
+            {
+               "id":2,
+               "text":"A constructor"
+            },
+            {
+               "id":3,
+               "text":"A print statement"
+            },
+            {
+               "id":4,
+               "text":"A method that has a return type"
+            }
+         ], 
+          "explanation" : "A function is a method that does have a return value. To define a method to be a function, set its return type to be the type of the value it is returning."
+      },
+      {
+         "id":20,
+         "text":"Int is used for characters",
+         "quizId":1,
+         "questionTypeId":4,
+         "correctAnswerId":2,
+         "answers":[
+            {
+               "id":1,
+               "text":"true"
+            },
+            {
+               "id":2,
+               "text":"false"
+            }
+         ],
+         "explanation" : "The Java int keyword is a primitive data type. It is used to declare variables. It can also be used with methods to return integer type values. It can hold a 32-bit signed two's complement integer."
       }
    ]
 }
