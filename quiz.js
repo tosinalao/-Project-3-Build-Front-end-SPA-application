@@ -1,7 +1,7 @@
 
 const QUIZZESURL ="https://my-json-server.typicode.com/tosinalao/Project-3-Build-Front-end-SPA-application/quizzes"
 const QUESTIONURL =  "https://my-json-server.typicode.com/tosinalao/Project-3-Build-Front-end-SPA-application/questions-and-answers"
-
+const QUESTIONURL2 = "https://my-json-server.typicode.com/tosinalao/Quiz-Application/questions-and-answers"
 
 
 // appState, keep information about the State of the application.
@@ -14,7 +14,7 @@ const appState = {
     score: 0,
     questionNo: 0,
     message:'',
-    messageOptions: ['Brillant!', 'Awesome','Great'],
+    messageOptions: ['Brilliant!', 'Awesome','Great'],
     userAnswers: []
 
 
@@ -131,7 +131,7 @@ function checkName(ele){
 
 async function fetchData(url){
 
-  var response=await fetch(url);
+  var response = await fetch(url);
   return await response.json();
 
 }
@@ -149,7 +149,8 @@ function setSelectedQuiz(ele){
 
 function gotoNextQuestion(){
   appState.questionNo++;
-  var url  =  `${QUESTIONURL}?quizId=${appState.currentQuizId}&id=${appState.questionNo}`
+  var baseUrl = appState.currentQuizId == 2 ? QUESTIONURL2 : QUESTIONURL
+  var url  =  `${baseUrl}?quizId=${appState.currentQuizId}&id=${appState.questionNo}`
 
   console.log(`Url: ${url}`);
 
