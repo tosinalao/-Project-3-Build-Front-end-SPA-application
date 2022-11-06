@@ -56,7 +56,7 @@
                "text":"A cooking Pot"
             }
          ],
-         "Explanation" : "Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake."
+         "explanation" : "Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake."
       },
       {
          "id": 2,
@@ -74,7 +74,7 @@
                "text":"false"
             }
          ],
-         "Explanation" : "A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state."
+         "explanation" : "A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state."
       },
       {
          "id": 3,
@@ -88,7 +88,7 @@
                "text":"Object Oriented Programming"
             }
          ], 
-         "Explanation" : "Object-oriented programming is about creating objects that contain both data and methods."
+         "explanation" : "Object-oriented programming is about creating objects that contain both data and methods."
       },
       {
          "id":4,
@@ -102,7 +102,7 @@
                "text": "main"
             }
          ],
-         "Explanation" : "The Java main method is usually the first method you learn about when you start programming in Java because its the entry point for executing a Java program. The main method can contain code to execute or call other methods, and it can be placed in any class that’s part of a program"
+         "explanation" : "The Java main method is usually the first method you learn about when you start programming in Java because its the entry point for executing a Java program. The main method can contain code to execute or call other methods, and it can be placed in any class that’s part of a program"
       },
       {
          "id":5,
@@ -128,7 +128,7 @@
                "text":"Inheritance"
             }
          ],
-          "Explanation" : "The answer is all of the above because object-oriented programming has four basic concepts: encapsulation, abstraction, inheritance and polymorphism. While these concepts may seem complex, understanding the general framework of how they work will help you understand the basics of an OOP computer program."
+          "explanation" : "The answer is all of the above because object-oriented programming has four basic concepts: encapsulation, abstraction, inheritance and polymorphism. While these concepts may seem complex, understanding the general framework of how they work will help you understand the basics of an OOP computer program."
       },
        {
          "id":6,
@@ -154,7 +154,7 @@
                "text":"clear the console"
             }
          ],
-         "Explanation" : "The answer is print a statement because"
+         "explanation" : "The answer is print a statement because"
       },
       {
          "id":7,
