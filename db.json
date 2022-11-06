@@ -55,7 +55,7 @@
                "text":"A cooking Pot"
             }
          ],
-         "explanation" : "Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake."
+         "explanation" : "A java class is a blueprint for creating objects. Everything in Java is associated with classes and objects, along with its attributes and methods."
       },
       {
          "id": 2,
