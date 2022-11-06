@@ -16,6 +16,7 @@
     <!-- <link rel="stylesheet" href="spa_app.css"> -->
     <script src="quiz.js"> </script>
 
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -48,7 +49,7 @@
             `
              <div>
                 <p class="questionNo">Question {{questionNo}}</p>
-                <p  class="question_text">Question {{question.text}}</p>
+                <p  class="question_text">{{question.text}}</p>
              </div>
            `);
 
@@ -92,25 +93,27 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
           {{> questionView}}
           <div>
 
-         <p>Sorry.. Not Correct see</p>
+         <p>Sorry.. Not Correct</p>
 
          {{#if (condition question.questionType 3) }}
          {{else if (condition question.questionType 5) }}
 
-            {{#each question.answers}}
-                <input type="text"  class="form-control" value="{{text}}"> &nbsp;
-              {{/each}}
+         {{#each question.answers}}
+             <input type="text"  class="form-control" value="{{text}}"> &nbsp;
+           {{/each}}
 
               <p>Your answers:</p>
                 {{#each userAnswers}}
                   {{#if correct }}
                     <div>
-                        <button class="btn btn-light" >{{text}}</button>  <img class="indicator" src ="images/correct.png" />
+                        <button class="btn btn-light" >{{text}}</button> <span class = "indicator"> &#10003;</span>
                     </div>
 
                     {{else}}
                       <div>
-                        <button class="btn btn-light" >{{text}}</button>  <img class="indicator" src ="images/wrong.png" />
+                        <button class="btn btn-light" >{{text}}</button>  <span class = "indicator"> &#10005;</span>
+
+
                     </div>
                   {{/if}}
                 {{/each}}
@@ -120,12 +123,12 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
          {{#each question.answers}}
              {{#if (condition  id question.correctAnswerId) }}
                <div>
-                   <button class="btn btn-light" >{{text}}</button>  <img class="indicator" src ="images/correct.png" />
+                   <button class="btn btn-light" >{{text}}</button>  <span class = "indicator"> &#10003;</span>
                </div>
 
                {{else if (userAnswerExist  ../userAnswers id)  }}
                  <div>
-                   <button class="btn btn-light" >{{text}}</button>  <img class="indicator" src ="images/correct.png" />
+                   <button class="btn btn-light" >{{text}}</button>  <span class = "indicator"> &#10003;</span>
                </div>
 
 
@@ -140,17 +143,14 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
      {{/if}}
 
 
-
               <p>Explanation:
                 {{question.explanation}}
               </p>
-
 
               <button onclick="gotoNextQuestion()">Got it !</button>
 
        </div>
       </div>
-
     </div>
 </script>
 
@@ -180,13 +180,14 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
           <div class="col">
             <div class="mb-3">
               <p class="fw-bold">Select Quiz</p>
-               <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="setSelectedQuiz(this)">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="setSelectedQuiz(this)">
                 <option selected value="0">Select</option>
                 {{#each quizzes}}
                 <option value="{{id}}">{{name}}</option>
                 {{/each}}
 
               </select>
+
             </div>
           </div>
         </div>
@@ -203,6 +204,7 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
               {{#each question.answers}}
                   <div>
                     <button class="btn btn-light" onclick="nextQuestion(this)" data-answer-id="{{id}}">{{text}}</button>
+                    <br>
                   </div>
               {{/each}}
 
@@ -221,6 +223,7 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
               {{#each question.answers}}
                 <div>
                     <button class="btn btn-light" onclick="nextQuestion(this)"  data-answer-id="{{id}}">{{text}}</button>
+                    <br>
                  </div>
               {{/each}}
 
@@ -240,32 +243,12 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
               {{#each question.answers}}
                   <div>
                      <input type="checkbox" class="btn btn-primary" name ="text-answer"  data-answer-id="{{id}}" /> {{text}}
+                     <br>
                   </div>
 
               {{/each}}
 
               <button class="btn btn-primary" onclick="handleMultipleOption()"  data-answer-id="{{id}}">Next question</button>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </script>
-
-
-
-  <script id="question_view_image_choice" type="text/x-handlebars-template">
-    <div class="container">
-      <div class="row">
-          <div class="col">
-            {{> questionView}}
-            <div>
-              {{#each question.answers}}
-                <div>
-                  <img  src="{{text}}" class="btn img-answer" onclick="nextQuestion(this)"  data-answer-id="{{id}}" />
-
-                  <div>
-              {{/each}}
 
             </div>
           </div>
@@ -314,7 +297,6 @@ Handlebars.registerHelper('userAnswerExist', function (array,id) {
                    {{message}}
                 </div>
 
-                <span> Thank you for taking the quiz</span>
                 <button class="btn btn-danger" onclick="startAgain()" >Start Again</button>
               </div>
             </div>
