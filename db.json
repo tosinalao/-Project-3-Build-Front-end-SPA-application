@@ -205,34 +205,23 @@
       },
       {
          "id":10,
-         "text":"Which tag is used for a list?",
+         "text":"What type of loop is used when you know how many times you want to loop through a block of code?",
          "quizId":1,
          "questionTypeId":3,
-         "correctAnswerId":4,
+         "correctAnswerId":1,
          "answers":[
             {
                "id":1,
-               "text":"<h1>"
-            },
-            {
-               "id":2,
-               "text":"<div>"
-            },
-            {
-               "id":3,
-               "text":"<li>"
-            },
-            {
-               "id":4,
-               "text":"<a>"
+               "text":"for loop"
             }
-         ]
+         ],
+         "explanation" : "When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop"
       },
        {
          "id":11,
          "text":"What is a function?",
          "quizId":1,
-         "questionTypeId":4,
+         "questionTypeId":1,
          "correctAnswerId":4,
          "answers":[
             {
@@ -251,13 +240,14 @@
                "id":4,
                "text":"A method that has a return type"
             }
-         ]
+         ], 
+          "explanation" : "A function is a method that does have a return value. To define a method to be a function, set its return type to be the type of the value it is returning."
       },
       {
          "id":12,
          "text":"Int is used for characters",
          "quizId":1,
-         "questionTypeId":1,
+         "questionTypeId":4,
          "correctAnswerId":2,
          "answers":[
             {
@@ -268,7 +258,8 @@
                "id":2,
                "text":"false"
             }
-         ]
+         ],
+         "explanation" : "The Java int keyword is a primitive data type. It is used to declare variables. It can also be used with methods to return integer type values. It can hold a 32-bit signed two's complement integer."
       },
       {
          "id":13,
@@ -280,57 +271,48 @@
                "id":1,
                "text":"Double"
             }
-         ]
+         ],
+         "explanation" : "The double keyword is a data type that can store fractional numbers from 1.7e−308 to 1.7e+308."
       },
       {
          "id":14,
-         "text":"Which is Java logo?",
+         "text":"The ________ keyword is used to get a package, class or interface.",
          "quizId":1,
          "questionTypeId":5,
          "correctAnswerId":3,
          "answers":[
             {
                "id":1,
-               "text":"https://ibb.co/P5jyRV0"
-            },
-            {
-               "id":2,
-               "text":"https://ibb.co/dgH4hFm"
-            },
-            {
-               "id":3,
-               "text":"https://ibb.co/WkYvnyB"
-            },
-            {
-               "id":4,
-               "text":"https://ibb.co/dgH4hFm"
+               "text":"import"
             }
-         ]
+         ],
+         "explanation" : "import is a Java keyword. It declares a Java class to use in the code below the import statement. Once a Java class is declared, then the class name can be used in the code without specifying the package the class belongs to."
       },
       {
          "id":15,
-         "text":"Which HTML tag is used to define style information?",
+         "text":"Which symbol is used to comment out information?",
          "quizId":1,
          "questionTypeId":1,
-         "correctAnswerId":3,
+         "correctAnswerId":2,
          "answers":[
             {
                "id":1,
-               "text":"<h1>"
+               "text":"--"
             },
             {
                "id":2,
-               "text":"<li>"
+               "text":"//"
             },
             {
                "id":3,
-               "text":"<style>"
+               "text":"**"
             },
             {
                "id":4,
-               "text":"<a>"
+               "text":".."
             }
-         ]
+         ],
+         "explanation" : "Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.Single-line comments start with two forward slashes (//)."
       }
    ]
 }
