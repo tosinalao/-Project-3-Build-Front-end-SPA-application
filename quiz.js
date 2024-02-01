@@ -1,6 +1,6 @@
 
 const QUIZZESURL ="https://my-json-server.typicode.com/tosinalao/Project-3-Build-Front-end-SPA-application/quizzes"
-const QUESTIONURL =  "https://my-json-server.typicode.com/tosinalao/Project-3-Build-Front-end-SPA-application/questions-and-answers"
+const QUESTIONURL =  "https://my-json-server.typicode.com/tosinalao/Project-3-QuizApplication/questions-and-answers"
 const QUESTIONURL2 = "https://my-json-server.typicode.com/tosinalao/Quiz-Application/questions-and-answers"
 
 
